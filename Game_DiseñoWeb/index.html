@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+    <script src="./src/utils.js"></script>
+    <script src="./src/engine.js"></script>
+    <script src="./src/input.js"></script>
+    <script src="./src/stone.js"></script>
+    <script src="./src/player.js"></script>
+    <script src="./src/bullets.js"></script>
+    <script src="./src/powers.js"></script>
+    <script src="./src/mainmenu.js"></script>
+    <script src="./src/game.js"></script>
+    <script src="./src/particles.js"></script>
+    <script src="./src/firebase.js" type="module"></script>
+    <title>TSW</title>
+    <link rel="icon" type="image/png" href="assets/canon_icon.png">
+</head>
+<body>
+    <div id="container">
+        <canvas id="myCanvas" width="1280" height="720"></canvas>
+        <div id="mainMenu">
+            <img src="assets/monkey.png" alt="Game Logo" id="gameLogo">
+            <h1>BlasterCannon</h1>
+            <div class="menuButton" id="startButton">Start</div>
+            <div class="menuButton" id="creditsButton">Credits</div>
+            <div class="menuButton" id="leaderButton">LeaderBoard</div>
+        </div>
+        <div id="credits">
+            <div class="credits-content">
+                <h2>Development: Ignacio Tapia</h2>
+                <h2>Art: Norma Alejandra Martinez</h2>
+                <h2>SoundsEffects: FreeSounds</h2>
+                <div class="menuButton" id="backButton1">Back</div>
+            </div>
+        </div>
+        <div id="leaderBoard">
+            <div class="leaderBoard-content">
+            </div>
+        </div>
+        <div id="gameOver">
+            <div class="gameOver-content">
+                <h1>GAME OVER</h1>
+                <input type="text" id="playerName" maxlength="5" placeholder="Enter your name (5 letters)">
+                <div class="menuButton" id="backButton3">Enter</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

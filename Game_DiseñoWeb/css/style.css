@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: grey;
+    text-align: center;
+}
+
+#container {
+    position: relative;
+    width: 1280px;
+    height: 720px;
+    margin: 20px auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#mainMenu {
+    background-color: rgb(76, 171, 226);
+    background-image: linear-gradient(to bottom, rgb(76, 171, 226), rgb(131, 98, 219));
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: top 1s, left 1s;
+}
+
+#mainMenu > h1 {
+    margin: 0px auto 90px auto;
+}
+
+#mainMenu > img{
+    position: relative;
+    top: 95px;
+    left: 100px;
+    z-index: 1;
+}
+
+#leaderBoard {
+    background-color: rgb(76, 171, 226);
+    background-image: linear-gradient(to bottom, rgb(76, 171, 226), rgb(131, 98, 219));
+    position: absolute;
+    top: 0;
+    left: 1280;
+    height: 100%;
+    width: 100%;
+    transition: left 1s;
+}
+
+.leaderBoard-content{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+}
+.leaderBoard-content > .menuButton{
+    position: absolute;
+    bottom: 10px;
+    margin: 10px;
+}
+#credits {
+    background-color: rgb(131, 98, 219);
+    background-image: linear-gradient(to bottom, rgb(131, 98, 219), rgb(76, 171, 226));
+    position: absolute;
+    top: 720px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: top 1s;
+}
+
+.credits-content {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.credits-content > .menuButton{
+    margin-top: 150px;
+}
+
+h1 {
+    font-size: 70px;
+    font-family: 'Boogaloo', cursive;
+    color: rgb(230, 218, 60);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+h2 {
+    font-size: 35px;
+    font-family: 'Boogaloo', cursive;
+    color: rgb(230, 255, 134);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    margin: 20px auto;
+}
+
+#gameOver{
+    background-color: rgb(76, 171, 226);
+    background-image: linear-gradient(to bottom,  rgb(131, 98, 219), rgb(76, 171, 226));
+    position: absolute;
+    top: -720;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: top 1s;
+}
+
+.gameOver-content {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#playerName {
+    margin-top: 50px;
+    font-size: 18px;
+    font-family: 'Boogaloo', cursive;
+    padding: 7px;
+    width: 300px;
+}
+
+.gameOver-content > .menuButton{
+    position: absolute;
+    bottom: 10px;
+    margin: 10px;
+}
+.menuButton {
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    background-color: rgba(230, 218, 60);
+    color: rgb(0, 0, 0);
+    border: solid 2px rgb(0, 0, 0);
+    box-shadow: 0px 3px 4px -2px rgba(0,0,0,0.75);
+    margin: 40px auto;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.5s;
+
+    font-family: 'Boogaloo', cursive;
+    font-size:  30px;
+}
+
+.menuButton:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+.menuButton:active {
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+}
+
+#myCanvas {
+    background-size: contain;
+    border: solid 1px black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
